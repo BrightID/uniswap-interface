@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from 'idchain-uniswap-sdk'
+import { Currency, ETHER as EIDI, WETH, ChainId, Token } from 'idchain-uniswap-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 
@@ -34,7 +34,7 @@ export default function CurrencyLogo({
   const uriLocations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
 
   const srcs: string[] = useMemo(() => {
-    if (currency === ETHER) return []
+    if (currency === EIDI || currency === WETH[ChainId.IDCHAIN]) return []
 
     if (currency instanceof Token) {
       if (currency instanceof WrappedTokenInfo) {
@@ -46,7 +46,7 @@ export default function CurrencyLogo({
     return []
   }, [currency, uriLocations])
 
-  if (currency === ETHER) {
+  if (currency === EIDI || currency === WETH[ChainId.IDCHAIN]) {
     return <StyledEthereumLogo src={EthereumLogo} size={size} style={style} />
   }
 
