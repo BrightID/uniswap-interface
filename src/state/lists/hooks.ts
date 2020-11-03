@@ -14,6 +14,7 @@ export interface TagInfo extends TagDetails {
  */
 export class WrappedTokenInfo extends Token {
   public readonly tokenInfo: TokenInfo
+  
   public readonly tags: TagInfo[]
   constructor(tokenInfo: TokenInfo, tags: TagInfo[]) {
     super(tokenInfo.chainId, tokenInfo.address, tokenInfo.decimals, tokenInfo.symbol, tokenInfo.name)
@@ -35,7 +36,8 @@ const EMPTY_LIST: TokenAddressMap = {
   [ChainId.RINKEBY]: {},
   [ChainId.ROPSTEN]: {},
   [ChainId.GÖRLI]: {},
-  [ChainId.MAINNET]: {}
+  [ChainId.MAINNET]: {},
+  [ChainId.IDCHAIN]: {}
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =

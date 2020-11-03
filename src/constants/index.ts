@@ -1,7 +1,7 @@
 import { ChainId, JSBI, Percent, Token, WETH } from 'idchain-uniswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
-import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
+import { injected, walletconnect} from '../connectors'
 
 export const ROUTER_ADDRESS = '0x3DBD03c29AE41C2403Dc4375711bc8cEF32fC4C5'
 

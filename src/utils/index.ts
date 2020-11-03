@@ -22,11 +22,13 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   3: 'ropsten.',
   4: 'rinkeby.',
   5: 'goerli.',
-  42: 'kovan.'
+  42: 'kovan.',
+  74: 'idchain.'
 }
 
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`
+  
+  const prefix = chainId !== 74 ? `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io` : `https://explorer.idchain.one/`
 
   switch (type) {
     case 'transaction': {
