@@ -40,6 +40,14 @@ export function colors(darkMode: boolean): Colors {
     white,
     black,
 
+    // gradient colors
+    grd1: darkMode ? '#394F50' : '#F2E5FF',
+    grd2: darkMode ? '#484E45' : '#D6F5EB',
+    grd3: darkMode ? '#394F50' : '#C4FFDF',
+    grd4: darkMode ? '#394F50' : '#C5FCE0',
+    grd5: darkMode ? '#394F50' : '#E9EAF9',
+    grd6: darkMode ? '#394F50' : '#F2E5FF',
+
     // text
     text1: darkMode ? '#FFFFFF' : '#000000',
     text2: darkMode ? '#C3C5CB' : '#565A69',
@@ -59,19 +67,19 @@ export function colors(darkMode: boolean): Colors {
     advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#2172E5' : '#ff007a',
-    primary2: darkMode ? '#3680E7' : '#FF8CC3',
-    primary3: darkMode ? '#4D8FEA' : '#FF99C9',
-    primary4: darkMode ? '#376bad70' : '#F6DDE8',
-    primary5: darkMode ? '#153d6f70' : '#FDEAF1',
+    primary1: darkMode ? '#6DA8FF' : '#4E3FC9',
+    primary2: darkMode ? '#46435D' : '#DFDCF6',
+    primary3: darkMode ? '#46435D' : '#DFDCF6',
+    primary4: darkMode ? '#46435D' : '#DFDCF6',
+    primary5: darkMode ? '#46435D' : '#DFDCF6',
 
     // color text
-    primaryText1: darkMode ? '#6da8ff' : '#ff007a',
+    primaryText1: darkMode ? '#6DA8FF' : '#4E3FC9',
 
     // secondary colors
-    secondary1: darkMode ? '#2172E5' : '#ff007a',
-    secondary2: darkMode ? '#17000b26' : '#F6DDE8',
-    secondary3: darkMode ? '#17000b26' : '#FDEAF1',
+    secondary1: darkMode ? '#30cfbf' : '#7CE0D6',
+    secondary2: darkMode ? '#17000b26' : '#7CE0D6',
+    secondary3: darkMode ? '#17000b26' : '#7CE0D6',
 
     // other
     red1: '#FF6871',
@@ -206,7 +214,13 @@ html {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
-  background-color: ${({ theme }) => theme.bg2};
+  background: linear-gradient(60deg, 
+    ${({ theme }) => theme.grd1} 0%, 
+    ${({ theme }) => theme.grd2} 12%, 
+    ${({ theme }) => theme.grd3} 22%,
+    ${({ theme }) => theme.grd4} 26%,
+    ${({ theme }) => theme.grd5} 73%,
+    ${({ theme }) => theme.grd6} 100%);
 }
 
 body {
@@ -220,3 +234,5 @@ body {
     )} 100%)`};
 }
 `
+
+// background-color: ${({ theme }) => theme.grd1};
