@@ -23,7 +23,7 @@ or visit [app.uniswap.org](https://app.uniswap.org).
 ## Listing a token
 
 Please see the
-[@uniswap/default-token-list](https://github.com/uniswap/default-token-list) 
+[idchain-default-token-list](https://github.com/IDChain-eth/default-token-list) 
 repository.
 
 ## Development
