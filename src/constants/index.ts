@@ -1,9 +1,9 @@
 import { ChainId, JSBI, Percent, Token, WETH } from 'idchain-uniswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
-import { injected, walletconnect} from '../connectors'
+import { injected, walletconnect } from '../connectors'
 
-export const ROUTER_ADDRESS = '0x3DBD03c29AE41C2403Dc4375711bc8cEF32fC4C5'
+export const ROUTER_ADDRESS = '0x26BecB3084d0C8149CBCf75643FD4264d37cda66'
 
 // a list of tokens by chain
 type ChainTokenList = {
