@@ -11,6 +11,7 @@ type ChainTokenList = {
 }
 
 export const DAI = new Token(ChainId.IDCHAIN, '0x128741612e7575AEA3F6e94CB567c75c4c415D89', 18, 'DAI', 'Dai Stablecoin')
+export const USDC = new Token(ChainId.IDCHAIN, '0x128741612e7575AEA3F6e94CB567c75c4c415D89', 18, 'USDC', 'USDC// Coin')
 export const SUBS = new Token(ChainId.IDCHAIN, '0x5ef7e0df1148bbaa90a2bdcf7ea977087929d60c', 0, 'SUBS', 'Subscriptions')
 export const WEIDI = new Token(
   ChainId.IDCHAIN,
