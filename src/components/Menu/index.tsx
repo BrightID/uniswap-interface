@@ -94,13 +94,13 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://uniswap.org/">
+          <MenuItem id="link" href="http://uniswap.idchain.one/">
             <Info size={14} />
             About
           </MenuItem>
           <MenuItem id="link" href="https://uniswap.org/docs/v2">
             <BookOpen size={14} />
-            Docs
+            Uniswap Docs
           </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
@@ -110,7 +110,7 @@ export default function Menu() {
             <MessageCircle size={14} />
             Discord
           </MenuItem>
-          <MenuItem id="link" href="https://uniswap.info/">
+          <MenuItem id="link" href="http://uniswap-info.idchain.one/">
             <PieChart size={14} />
             Analytics
           </MenuItem>
