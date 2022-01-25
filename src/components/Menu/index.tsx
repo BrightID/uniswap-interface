@@ -94,7 +94,7 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="http://uniswap.idchain.one/">
+          <MenuItem id="link" href="http://swap.idchain.one/">
             <Info size={14} />
             About
           </MenuItem>
