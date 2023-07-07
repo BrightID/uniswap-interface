@@ -86,8 +86,7 @@
     "os-browserify": "*", 
     "stream-browserify": "*", 
     "stream-http": "*",
-    "crypto-browserify": "*",
-    "browserify-zlib": "*"
+    "crypto-browserify": "*"
   },
   "resolutions": {
     "@walletconnect/web3-provider": "1.1.1-alpha.0"
