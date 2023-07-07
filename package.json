@@ -78,7 +78,14 @@
     "start-server-and-test": "^1.11.0",
     "styled-components": "^4.2.0",
     "typescript": "^3.8.3",
-    "react-app-rewired": "^2.1.9"
+    "react-app-rewired": "^2.1.9",
+    "fs": "*",  
+    "assert": "*",  
+    "https-browserify": "*", 
+    "os": "*", 
+    "os-browserify": "*", 
+    "stream-browserify": "*", 
+    "stream-http": "*",
   },
   "resolutions": {
     "@walletconnect/web3-provider": "1.1.1-alpha.0"
